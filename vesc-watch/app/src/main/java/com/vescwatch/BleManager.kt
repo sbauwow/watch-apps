@@ -35,7 +35,7 @@ class BleManager(private val context: Context) {
         private val CCCD        = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb")
 
         private const val BLE_CHUNK_SIZE = 20
-        private const val POLL_INTERVAL_MS = 200L
+        private const val POLL_INTERVAL_MS = 500L
         private const val SCAN_COLLECT_MS = 5000L
     }
 
@@ -74,6 +74,7 @@ class BleManager(private val context: Context) {
     private val pollRunnable = object : Runnable {
         override fun run() {
             if (connected && txChar != null) {
+                rxLen = 0 // Clear stale data before each request
                 sendGetValues()
             }
             handler.postDelayed(this, POLL_INTERVAL_MS)
@@ -317,6 +318,14 @@ class BleManager(private val context: Context) {
                 val chunk = c.value ?: return
                 if (chunk.isEmpty()) return
                 onBleDataReceived(chunk)
+            }
+        }
+
+        // API 33+ callback — value passed directly instead of via characteristic.getValue()
+        override fun onCharacteristicChanged(g: BluetoothGatt, c: BluetoothGattCharacteristic, value: ByteArray) {
+            if (NUS_RX == c.uuid) {
+                if (value.isEmpty()) return
+                onBleDataReceived(value)
             }
         }
     }

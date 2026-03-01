@@ -204,6 +204,12 @@ public class VescProtocol {
                 // Verify end byte
                 if ((data[i + totalLen - 1] & 0xFF) != 0x03) continue;
 
+                // Verify CRC
+                int crcExpected = ((data[i + 2 + payloadLen] & 0xFF) << 8)
+                               | (data[i + 3 + payloadLen] & 0xFF);
+                int crcActual = crc16(data, i + 2, payloadLen);
+                if (crcExpected != crcActual) continue;
+
                 // payload starts at i+2, length = payloadLen
                 return new int[] { i + 2, payloadLen, i + totalLen };
 
@@ -214,6 +220,13 @@ public class VescProtocol {
                     int totalLen = payloadLen + 6;
                     if (i + totalLen > length) return null;
                     if ((data[i + totalLen - 1] & 0xFF) != 0x03) continue;
+
+                    // Verify CRC
+                    int crcExpected = ((data[i + 3 + payloadLen] & 0xFF) << 8)
+                                   | (data[i + 4 + payloadLen] & 0xFF);
+                    int crcActual = crc16(data, i + 3, payloadLen);
+                    if (crcExpected != crcActual) continue;
+
                     return new int[] { i + 3, payloadLen, i + totalLen };
                 }
             }
