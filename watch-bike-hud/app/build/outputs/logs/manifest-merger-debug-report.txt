@@ -1,0 +1,236 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:2:1-48:12
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/stathis/.gradle/caches/9.3.0/transforms/ef8f7b41797a5ab896b6d8229123e8b1/transformed/play-services-location-21.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/stathis/.gradle/caches/9.3.0/transforms/8adbe7ab4e6ca2f4bfc61f17a8744b59/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/db1f89d1bce6293e5e1f301a70592c6e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/8e4c04a0a01b2946b79b97a6c3138cfb/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/23e4f0ad8276d22d10b0f836a0125c9f/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/538508505e6d20751310fa202c07db61/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/714ee55de23ff4c1827b21b0aab872ab/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/ac9bc464b9511c89cbfc42aa875315da/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/359e5e198ae1e2b2b7772b5b588f7282/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/1038eaf5a8e2e9d22afa2aa82f1cb9b8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/d1a4c307a89554068446274ece68671d/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/6dc35bea5b2e45cd897ad644eefd8eb1/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/198a97d7917bcbc1ab5d36058fd988b9/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/b808b78535a4c443fa1d7a589524b841/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0] /home/stathis/.gradle/caches/9.3.0/transforms/1db12be99c520a706a3b41a88f065aca/transformed/core-1.2.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/d4ed09fc45a8db0d77028c1b7f132d1c/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/4f1b56144e82fd754e96e518e07229a6/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/e1b7ab9641a5832f1f22bf8153c7e9bc/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/204b29bc21cc1282086bf36a26512f18/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/410c00d176ba9470098f868e3c3ccd97/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/736fa3afe1964e8a35d02155e974af89/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/f2bba0eb1440fc721059996622c74a18/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/a8d2542202e7550987955c53ebc905f7/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/bdae4f1b548272df65385150bb5183f0/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/5aeb4f66f94d5e04a6bae7099700f510/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/b00e995796fae51f9ce3842eef0416b4/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BODY_SENSORS
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:5:5-71
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:5:22-68
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.BLUETOOTH
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:12:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:13:5-74
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:13:22-71
+uses-permission#android.permission.BLUETOOTH_ADVERTISE
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:14:5-78
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:14:22-75
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:15:22-73
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:18:5-77
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:18:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_HEALTH
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:19:5-84
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:19:22-81
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:20:5-68
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:20:22-65
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:21:5-77
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:21:22-74
+uses-feature#android.hardware.bluetooth_le
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:23:5-90
+	android:required
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:23:64-87
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:23:19-63
+uses-feature#android.hardware.sensor.heartrate
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:24:5-94
+	android:required
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:24:68-91
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:24:19-67
+uses-feature#android.hardware.location.gps
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:25:5-90
+	android:required
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:25:64-87
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:25:19-63
+uses-feature#android.hardware.type.watch
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:26:5-64
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:26:19-61
+application
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:28:5-47:19
+INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:28:5-47:19
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/stathis/.gradle/caches/9.3.0/transforms/ef8f7b41797a5ab896b6d8229123e8b1/transformed/play-services-location-21.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/stathis/.gradle/caches/9.3.0/transforms/ef8f7b41797a5ab896b6d8229123e8b1/transformed/play-services-location-21.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/stathis/.gradle/caches/9.3.0/transforms/8adbe7ab4e6ca2f4bfc61f17a8744b59/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/stathis/.gradle/caches/9.3.0/transforms/8adbe7ab4e6ca2f4bfc61f17a8744b59/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/db1f89d1bce6293e5e1f301a70592c6e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/db1f89d1bce6293e5e1f301a70592c6e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.2.0] /home/stathis/.gradle/caches/9.3.0/transforms/1db12be99c520a706a3b41a88f065aca/transformed/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] /home/stathis/.gradle/caches/9.3.0/transforms/1db12be99c520a706a3b41a88f065aca/transformed/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/d4ed09fc45a8db0d77028c1b7f132d1c/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/d4ed09fc45a8db0d77028c1b7f132d1c/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] /home/stathis/.gradle/caches/9.3.0/transforms/1db12be99c520a706a3b41a88f065aca/transformed/core-1.2.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:29:9-33
+	android:theme
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:30:9-59
+uses-library#com.google.android.wearable
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:32:9-93
+	android:required
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:32:66-90
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:32:23-65
+activity#com.watchbikehud.WatchBikeActivity
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:34:9-41:20
+	android:exported
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:36:13-36
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:35:13-46
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:37:13-40:29
+action#android.intent.action.MAIN
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:38:17-69
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:38:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:39:27-74
+service#com.watchbikehud.BikeSensorService
+ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:43:9-46:54
+	android:exported
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:45:13-37
+	android:foregroundServiceType
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:46:13-51
+	android:name
+		ADDED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml:44:13-46
+uses-sdk
+INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml
+INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/stathis/.gradle/caches/9.3.0/transforms/ef8f7b41797a5ab896b6d8229123e8b1/transformed/play-services-location-21.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.0.1] /home/stathis/.gradle/caches/9.3.0/transforms/ef8f7b41797a5ab896b6d8229123e8b1/transformed/play-services-location-21.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/stathis/.gradle/caches/9.3.0/transforms/8adbe7ab4e6ca2f4bfc61f17a8744b59/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/stathis/.gradle/caches/9.3.0/transforms/8adbe7ab4e6ca2f4bfc61f17a8744b59/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/db1f89d1bce6293e5e1f301a70592c6e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/db1f89d1bce6293e5e1f301a70592c6e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/8e4c04a0a01b2946b79b97a6c3138cfb/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/8e4c04a0a01b2946b79b97a6c3138cfb/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/23e4f0ad8276d22d10b0f836a0125c9f/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/23e4f0ad8276d22d10b0f836a0125c9f/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/538508505e6d20751310fa202c07db61/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/538508505e6d20751310fa202c07db61/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/714ee55de23ff4c1827b21b0aab872ab/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/714ee55de23ff4c1827b21b0aab872ab/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/ac9bc464b9511c89cbfc42aa875315da/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/ac9bc464b9511c89cbfc42aa875315da/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/359e5e198ae1e2b2b7772b5b588f7282/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/359e5e198ae1e2b2b7772b5b588f7282/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/1038eaf5a8e2e9d22afa2aa82f1cb9b8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/1038eaf5a8e2e9d22afa2aa82f1cb9b8/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/d1a4c307a89554068446274ece68671d/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/d1a4c307a89554068446274ece68671d/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/6dc35bea5b2e45cd897ad644eefd8eb1/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/6dc35bea5b2e45cd897ad644eefd8eb1/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/198a97d7917bcbc1ab5d36058fd988b9/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/198a97d7917bcbc1ab5d36058fd988b9/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/b808b78535a4c443fa1d7a589524b841/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/b808b78535a4c443fa1d7a589524b841/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0] /home/stathis/.gradle/caches/9.3.0/transforms/1db12be99c520a706a3b41a88f065aca/transformed/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /home/stathis/.gradle/caches/9.3.0/transforms/1db12be99c520a706a3b41a88f065aca/transformed/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/d4ed09fc45a8db0d77028c1b7f132d1c/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/d4ed09fc45a8db0d77028c1b7f132d1c/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/4f1b56144e82fd754e96e518e07229a6/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/4f1b56144e82fd754e96e518e07229a6/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/e1b7ab9641a5832f1f22bf8153c7e9bc/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/e1b7ab9641a5832f1f22bf8153c7e9bc/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/204b29bc21cc1282086bf36a26512f18/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/204b29bc21cc1282086bf36a26512f18/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/410c00d176ba9470098f868e3c3ccd97/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/410c00d176ba9470098f868e3c3ccd97/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/736fa3afe1964e8a35d02155e974af89/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/736fa3afe1964e8a35d02155e974af89/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/f2bba0eb1440fc721059996622c74a18/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/f2bba0eb1440fc721059996622c74a18/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/a8d2542202e7550987955c53ebc905f7/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/a8d2542202e7550987955c53ebc905f7/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/bdae4f1b548272df65385150bb5183f0/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/bdae4f1b548272df65385150bb5183f0/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/5aeb4f66f94d5e04a6bae7099700f510/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/5aeb4f66f94d5e04a6bae7099700f510/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/b00e995796fae51f9ce3842eef0416b4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/stathis/.gradle/caches/9.3.0/transforms/b00e995796fae51f9ce3842eef0416b4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/stathis/glass-apps/watch-bike-hud/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/db1f89d1bce6293e5e1f301a70592c6e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/db1f89d1bce6293e5e1f301a70592c6e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/stathis/.gradle/caches/9.3.0/transforms/db1f89d1bce6293e5e1f301a70592c6e/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58

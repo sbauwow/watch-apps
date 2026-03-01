@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.watchbikehud.app-mergeDebugResources-6:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/home/stathis/.gradle/caches/9.3.0/transforms/1db12be99c520a706a3b41a88f065aca/transformed/core-1.2.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

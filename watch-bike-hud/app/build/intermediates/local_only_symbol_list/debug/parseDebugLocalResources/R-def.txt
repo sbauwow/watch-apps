@@ -1,0 +1,10 @@
+R_DEF: Internal format may change without notice
+local
+id ble_status
+id distance_display
+id elapsed_display
+id gps_status
+id hr_display
+id start_stop_btn
+layout activity_watch_bike
+string app_name

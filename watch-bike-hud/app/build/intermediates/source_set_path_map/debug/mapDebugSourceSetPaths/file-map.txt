@@ -1,0 +1,11 @@
+com.watchbikehud.app-core-1.2.0-0 /home/stathis/.gradle/caches/9.3.0/transforms/1db12be99c520a706a3b41a88f065aca/transformed/core-1.2.0/res
+com.watchbikehud.app-coordinatorlayout-1.0.0-1 /home/stathis/.gradle/caches/9.3.0/transforms/359e5e198ae1e2b2b7772b5b588f7282/transformed/coordinatorlayout-1.0.0/res
+com.watchbikehud.app-play-services-basement-18.1.0-2 /home/stathis/.gradle/caches/9.3.0/transforms/db1f89d1bce6293e5e1f301a70592c6e/transformed/play-services-basement-18.1.0/res
+com.watchbikehud.app-play-services-base-18.1.0-3 /home/stathis/.gradle/caches/9.3.0/transforms/efe4ef21d08932005371e6340d587db8/transformed/play-services-base-18.1.0/res
+com.watchbikehud.app-pngs-4 /home/stathis/glass-apps/watch-bike-hud/app/build/generated/res/pngs/debug
+com.watchbikehud.app-resValues-5 /home/stathis/glass-apps/watch-bike-hud/app/build/generated/res/resValues/debug
+com.watchbikehud.app-packageDebugResources-6 /home/stathis/glass-apps/watch-bike-hud/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.watchbikehud.app-packageDebugResources-7 /home/stathis/glass-apps/watch-bike-hud/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.watchbikehud.app-debug-8 /home/stathis/glass-apps/watch-bike-hud/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.watchbikehud.app-debug-9 /home/stathis/glass-apps/watch-bike-hud/app/src/debug/res
+com.watchbikehud.app-main-10 /home/stathis/glass-apps/watch-bike-hud/app/src/main/res

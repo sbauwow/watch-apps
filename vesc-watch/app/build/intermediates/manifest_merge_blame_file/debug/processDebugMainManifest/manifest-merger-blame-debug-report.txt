@@ -1,0 +1,79 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vescwatch"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:4:5-68
+11-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:4:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:5:5-74
+12-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:5:22-71
+13    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+13-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:6:5-73
+13-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:6:22-70
+14    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+14-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:7:5-76
+14-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:7:22-73
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:8:5-79
+15-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:8:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:9:5-81
+16-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:9:22-78
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:10:5-68
+17-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:10:22-65
+18
+19    <uses-feature
+19-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:12:5-90
+20        android:name="android.hardware.bluetooth_le"
+20-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:12:19-63
+21        android:required="true" />
+21-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:12:64-87
+22    <uses-feature android:name="android.hardware.type.watch" />
+22-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:13:5-64
+22-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:13:19-61
+23
+24    <application
+24-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:15:5-30:19
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:icon="@mipmap/ic_launcher"
+27-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:17:9-43
+28        android:label="VESC Watch"
+28-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:16:9-35
+29        android:theme="@android:style/Theme.DeviceDefault" >
+29-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:18:9-59
+30        <uses-library
+30-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:20:9-93
+31            android:name="com.google.android.wearable"
+31-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:20:23-65
+32            android:required="false" />
+32-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:20:66-90
+33
+34        <activity
+34-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:22:9-29:20
+35            android:name="com.vescwatch.WatchVescActivity"
+35-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:23:13-46
+36            android:exported="true" >
+36-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:24:13-36
+37            <intent-filter>
+37-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:25:13-28:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:26:17-69
+38-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:26:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:27:17-77
+40-->/home/stathis/glass-apps/vesc-watch/app/src/main/AndroidManifest.xml:27:27-74
+41            </intent-filter>
+42        </activity>
+43    </application>
+44
+45</manifest>
