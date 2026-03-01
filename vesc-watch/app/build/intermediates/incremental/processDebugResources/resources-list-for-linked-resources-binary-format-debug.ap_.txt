@@ -1,1 +1,0 @@
-/home/stathis/glass-apps/vesc-watch/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_watch.xml.flat /home/stathis/glass-apps/vesc-watch/app/build/intermediates/merged_res/debug/mergeDebugResources/values_values.arsc.flat 
