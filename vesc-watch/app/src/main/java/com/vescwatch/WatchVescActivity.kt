@@ -62,7 +62,7 @@ class WatchVescActivity : Activity(), BleManager.Listener {
         VescProtocol.motorPoles     = 30
         VescProtocol.wheelDiameterM = 0.280
         VescProtocol.gearRatio      = 1.0
-        VescProtocol.cellCountS     = 15
+        VescProtocol.cellCountS     = 0 // auto-detect
         VescProtocol.cellFull       = 4.2
         VescProtocol.cellEmpty      = 3.0
 
