@@ -35,7 +35,7 @@ class BleManager(private val context: Context) {
         private val CCCD        = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb")
 
         private const val BLE_CHUNK_SIZE = 20
-        private const val POLL_INTERVAL_MS = 500L
+        private const val POLL_INTERVAL_MS = 1000L
         private const val SCAN_COLLECT_MS = 5000L
     }
 
@@ -156,7 +156,13 @@ class BleManager(private val context: Context) {
             .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
             .build()
 
-        scanner?.startScan(null, settings, scanCallback)
+        val filters = listOf(
+            ScanFilter.Builder()
+                .setServiceUuid(ParcelUuid(NUS_SERVICE))
+                .build()
+        )
+
+        scanner?.startScan(filters, settings, scanCallback)
 
         handler.postDelayed(scanEvaluator, SCAN_COLLECT_MS)
     }
@@ -254,6 +260,25 @@ class BleManager(private val context: Context) {
     }
 
     private val gattCallback = object : BluetoothGattCallback() {
+
+        // Hidden framework callback invoked by Android Bluetooth IPC when parameters change.
+        // Omit the @Override annotation to avoid compiler errors.
+        fun onConnectionUpdated(
+            gatt: BluetoothGatt,
+            interval: Int,
+            latency: Int,
+            timeout: Int,
+            status: Int
+        ) {
+            Log.i(TAG, "BLE params updated: interval=${interval * 1.25}ms, latency=$latency, timeout=${timeout * 10}ms")
+
+            // If peripheral forced latency back to 0, re-assert LOW_POWER
+            if (latency == 0) {
+                Log.w(TAG, "Peripheral reset slave latency to 0! Re-requesting LOW_POWER...")
+                gatt.requestConnectionPriority(BluetoothGatt.CONNECTION_PRIORITY_LOW_POWER)
+            }
+        }
+
         override fun onConnectionStateChange(g: BluetoothGatt, status: Int, newState: Int) {
             if (newState == BluetoothProfile.STATE_CONNECTED) {
                 Log.i(TAG, "Connected to GATT, discovering services...")
@@ -306,9 +331,11 @@ class BleManager(private val context: Context) {
                 trustDevice(connectedMac!!)
             }
             Log.i(TAG, "VESC BLE ready — starting telemetry polling")
+            g.requestConnectionPriority(BluetoothGatt.CONNECTION_PRIORITY_LOW_POWER)
+
             handler.post {
                 notifyStatus("CONNECTED")
-                handler.postDelayed(pollRunnable, 500)
+                handler.postDelayed(pollRunnable, 1000)
             }
         }
 
