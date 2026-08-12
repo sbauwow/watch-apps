@@ -15,6 +15,14 @@ import java.nio.ByteOrder;
 public class VescProtocol {
 
     public static final byte COMM_GET_VALUES = 0x04;
+    public static final byte COMM_GET_VALUES_SELECTIVE = 50;
+
+    // Mask for selective values:
+    // Bit 1: Motor Temp
+    // Bit 6: Duty Cycle
+    // Bit 7: RPM
+    // Bit 8: Input Voltage
+    public static final int MASK_SELECTIVE = (1 << 1) | (1 << 6) | (1 << 7) | (1 << 8);
 
     // ---- Board configuration (adjust for your setup) ----
 
@@ -37,63 +45,51 @@ public class VescProtocol {
     // -------------------------------------------------------
 
     /**
-     * Build a COMM_GET_VALUES request packet.
+     * Build a COMM_GET_VALUES_SELECTIVE request packet.
      */
     public static byte[] buildGetValues() {
-        byte[] payload = new byte[] { COMM_GET_VALUES };
+        byte[] payload = new byte[5];
+        payload[0] = COMM_GET_VALUES_SELECTIVE;
+        payload[1] = (byte) ((MASK_SELECTIVE >> 24) & 0xFF);
+        payload[2] = (byte) ((MASK_SELECTIVE >> 16) & 0xFF);
+        payload[3] = (byte) ((MASK_SELECTIVE >> 8) & 0xFF);
+        payload[4] = (byte) (MASK_SELECTIVE & 0xFF);
         return wrapPacket(payload);
     }
 
     /**
-     * Parse a COMM_GET_VALUES response payload (after unwrapping packet framing).
+     * Parse a COMM_GET_VALUES_SELECTIVE response payload (after unwrapping packet framing).
      * Returns null if payload is too short or wrong command ID.
      */
     public static VescData parseGetValues(byte[] payload) {
-        if (payload == null || payload.length < 56) return null;
+        if (payload == null || payload.length < 15) return null;
 
         ByteBuffer buf = ByteBuffer.wrap(payload).order(ByteOrder.BIG_ENDIAN);
 
         byte cmdId = buf.get();
-        if (cmdId != COMM_GET_VALUES) return null;
+        if (cmdId != COMM_GET_VALUES_SELECTIVE) return null;
+
+        int mask = buf.getInt();
+        if (mask != MASK_SELECTIVE) return null; // Ensure it matches what we requested
 
         VescData d = new VescData();
-        d.tempMos        = buf.getShort() / 10.0;       // offset 1
-        d.tempMotor      = buf.getShort() / 10.0;       // 3
-        d.currentMotor   = buf.getInt()   / 100.0;      // 5
-        d.currentIn      = buf.getInt()   / 100.0;      // 9
-        buf.getInt(); // id                               // 13
-        buf.getInt(); // iq                               // 17
-        d.dutyCycle      = buf.getShort() / 1000.0;      // 21
-        d.rpm            = buf.getInt();                  // 23
-        d.voltage        = buf.getShort() / 10.0;        // 27
-        d.ampHours       = buf.getInt()   / 10000.0;     // 29
-        d.ampHoursCharged = buf.getInt()  / 10000.0;     // 33
-        d.wattHours      = buf.getInt()   / 10000.0;     // 37
-        d.wattHoursCharged = buf.getInt() / 10000.0;     // 41
-        d.tachometer     = buf.getInt();                  // 45
-        d.tachometerAbs  = buf.getInt();                  // 49
-        d.faultCode      = buf.get();                     // 53
 
-        // Extended fields (firmware 5.x+): pid_pos, controller_id, then extra temps
-        d.tempBatt = -1;
-        if (buf.remaining() >= 5) {
-            buf.getInt();  // pid_pos_now                    // 54
-            buf.get();     // controller_id                  // 58
-        }
-        if (buf.remaining() >= 6) {
-            buf.getShort(); // temp_mos1 — skip              // 59
-            buf.getShort(); // temp_mos2 — skip              // 61
-            double tempMos3 = buf.getShort() / 10.0;         // 63
-            // temp_mos3 is commonly used for battery temp sensor
-            if (tempMos3 > 0 && tempMos3 < 150) {
-                d.tempBatt = tempMos3;
-            }
-        }
+        // Order of fields in response matches the bit order in the mask
+        // Bit 1: Motor Temp (float16)
+        d.tempMotor = buf.getShort() / 10.0;
+
+        // Bit 6: Duty Cycle (float16)
+        d.dutyCycle = buf.getShort() / 1000.0;
+
+        // Bit 7: RPM (float32)
+        d.rpm = buf.getInt();
+
+        // Bit 8: Input Voltage (float16)
+        d.voltage = buf.getShort() / 10.0;
 
         // Derived values
         d.speedMph = calcSpeedMph(d.rpm);
         d.batteryPct = calcBatteryPct(d.voltage);
-        d.tripMiles = calcTripMiles(d.tachometerAbs);
 
         return d;
     }
@@ -141,15 +137,6 @@ public class VescProtocol {
         if (voltage >= packFull) return 100.0;
         if (voltage <= packEmpty) return 0.0;
         return (voltage - packEmpty) / (packFull - packEmpty) * 100.0;
-    }
-
-    /** Tachometer absolute → trip distance in miles. */
-    public static double calcTripMiles(int tachAbs) {
-        // tach counts = ERPM ticks. One wheel revolution = motorPoles * 3 ticks.
-        double wheelRevs = (double) tachAbs / (motorPoles * 3.0);
-        double circumference = Math.PI * wheelDiameterM;
-        double meters = wheelRevs * circumference / gearRatio;
-        return meters / 1609.34;
     }
 
     // ---- Packet framing ----

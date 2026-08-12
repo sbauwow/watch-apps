@@ -23,9 +23,7 @@ class WatchVescActivity : Activity(), BleManager.Listener {
     private lateinit var speedValue: TextView
     private lateinit var battValue: TextView
     private lateinit var voltageValue: TextView
-    private lateinit var tempMosValue: TextView
     private lateinit var tempMotorValue: TextView
-    private lateinit var tempBattValue: TextView
     private lateinit var statusText: TextView
 
     companion object {
@@ -53,9 +51,7 @@ class WatchVescActivity : Activity(), BleManager.Listener {
         speedValue = findViewById(R.id.speed_value)
         battValue = findViewById(R.id.batt_value)
         voltageValue = findViewById(R.id.voltage_value)
-        tempMosValue = findViewById(R.id.temp_mos_value)
         tempMotorValue = findViewById(R.id.temp_motor_value)
-        tempBattValue = findViewById(R.id.temp_batt_value)
         statusText = findViewById(R.id.status_text)
 
         // Board config
@@ -133,19 +129,8 @@ class WatchVescActivity : Activity(), BleManager.Listener {
 
         voltageValue.text = String.format("%.1fV", data.voltage)
 
-        tempMosValue.text = String.format("C:%.0f°", cToF(data.tempMos))
-        tempMosValue.setTextColor(tempColor(data.tempMos))
-
         tempMotorValue.text = String.format("M:%.0f°", cToF(data.tempMotor))
         tempMotorValue.setTextColor(tempColor(data.tempMotor))
-
-        if (data.tempBatt >= 0) {
-            tempBattValue.text = String.format("B:%.0f°", cToF(data.tempBatt))
-            tempBattValue.setTextColor(tempColor(data.tempBatt))
-        } else {
-            tempBattValue.text = "B:--°"
-            tempBattValue.setTextColor(COLOR_DIM)
-        }
 
         statusText.text = "CONNECTED"
     }
